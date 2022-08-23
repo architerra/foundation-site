@@ -1,0 +1,18 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-page {
+    width: 1400px;
+    min-height: 100vh;
+    margin: auto;
+}
