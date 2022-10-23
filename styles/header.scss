@@ -1,34 +1,11 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 .header {
-  display: flex;
-  flex-direction: column;
-  height: 710px;
-  background-color: rgba(243, 198, 189, 1);
-}
-
-.header-menu {
   width: 1140px;
   height: 62px;
   display: flex;
   margin: auto;
-
-  &__button {
-    width: 160px;
-    height: 48px;
-    background-color: rgba(48, 64, 196, 1);
-    border-radius: 2px;
-    border: none;
-    color: rgba(255, 255, 255, 1);
-    line-height: 13px;
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
-
-.headline {
-  width: 1248px;
-  height: 456px;
+  margin-top: 39px;
 }
 
 .logo {
@@ -55,6 +32,8 @@
   &__description {
     font-size: 18px;
     line-height: 25px;
+    color: $text-black-color;
+    opacity: 0.6;
   }
 }
 

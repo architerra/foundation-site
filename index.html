@@ -16,8 +16,8 @@
   </head>
   <body>
     <div class="main-page">
-      <header class="header">
-        <div class="header-menu">
+      <div class="top">
+        <header class="header">
           <div class="logo">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
@@ -39,16 +39,54 @@
                 alt="Arr"
             /></a>
           </nav>
-          <button class="header-menu__button">Get Started</button>
+          <button class="get-button">Get Started</button>
+        </header>
+        <div class="headline">
+          <div class="headline-content">
+            <h1 class="headline-content__title">Build stunning websites & apps.</h1>
+            <p class="headline-content__description">
+              Create live segments and target the right people for messages based on their
+              behaviors.
+            </p>
+            <div class="headline-content__buttons">
+              <button class="get-button">Get Started</button>
+              <button class="learn-button">Learn More</button>
+            </div>
+          </div>
         </div>
-        <div class="headline"></div>
-      </header>
+        <img
+          class="headline-banner"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+          alt="Banner"
+        />
+      </div>
+      <section class="order">
+        <img
+          class="order__illustration"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
+          alt="Window"
+        />
+        <div class="order__details">
+          <h3 class="order__title">Start your free trial.</h3>
+          <p class="order__text">
+            Get notified about company updates, news and blog posts. We hate spam.
+          </p>
+          <form class="order__form">
+            <input class="order__email" type="email" placeholder="Enter your email" />
+            <button class="get-button order__button">Get Started</button>
+          </form>
+          <p class="order__terms">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a class="order__terms-link" href="#">Terms of Use.</a>
+          </p>
+        </div>
+      </section>
       <footer class="footer">
         <div class="footer-about">
           <div class="footer-description">
             <div class="logo">
               <img
-                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
                 alt="Icon Logo"
                 class="logo__icon"
               />
@@ -61,9 +99,40 @@
               Foundation is a website template for startups and small teams. It helps to build a
               website in no time.
             </p>
+            <a href="#"
+              ><img
+                class="footer-description__ref"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
+                alt="app-store"
+            /></a>
+            <a href="#"
+              ><img
+                class="footer-description__ref"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
+                alt="google-play"
+            /></a>
           </div>
-          <div class="footer-product"></div>
-          <div class="footer-company"></div>
+          <div class="additional-nav">
+            <div class="additional-nav__column nav-links">
+              <h3 class="nav-links__title">Product</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">Acquire Users</li>
+                <li class="nav-links__list-item">Content Marketing</li>
+                <li class="nav-links__list-item">Website Templates</li>
+                <li class="nav-links__list-item">Customer Management</li>
+                <li class="nav-links__list-item">Virtual Inbox</li>
+              </ul>
+            </div>
+            <div class="additional-nav__column nav-links">
+              <h3 class="nav-links__title">Company</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">About Foundation</li>
+                <li class="nav-links__list-item">Brand Guidelines</li>
+                <li class="nav-links__list-item">Press Kit</li>
+                <li class="nav-links__list-item">Support</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="footer-links">
           <nav class="footer-nav">

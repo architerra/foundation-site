@@ -1,18 +1,36 @@
 @import 'variables.scss';
+@import 'breakpoints.scss';
+@import 'common.scss';
 @import 'header.scss';
+@import 'headline.scss';
+@import 'order.scss';
 @import 'footer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .main-page {
-    width: 1400px;
+  width: 100%;
+
+  @include for-large-up {
+    max-width: 1400px;
     min-height: 100vh;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 710px;
+  background-color: $back-pink-color;
 }

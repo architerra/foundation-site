@@ -1,0 +1,48 @@
+@import 'variables.scss';
+
+.headline {
+  position: relative;
+  display: flex;
+  width: 1248px;
+  height: 456px;
+  margin-bottom: 77px;
+  margin-top: auto;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.headline-content {
+  position: absolute;
+  z-index: 1;
+  max-width: 754px;
+  margin-top: 76px;
+
+  &__title {
+    margin: 0;
+    font-size: 80px;
+    line-height: 78px;
+  }
+
+  &__description {
+    max-width: 456px;
+    margin-top: 34px;
+    color: $text-black-color;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__buttons {
+    display: flex;
+    width: 328px;
+    margin-top: 58px;
+    justify-content: space-between;
+  }
+}
+
+.headline-banner {
+  position: relative;
+  left: 579px;
+  bottom: 77px;
+  width: 796px;
+  height: 448px;
+}
