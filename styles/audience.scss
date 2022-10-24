@@ -50,13 +50,13 @@
     width: 100%;
     height: 108px;
     justify-content: space-between;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 
     @include for-large-up {
       flex-direction: row;
       width: 328px;
       height: 48px;
-      margin-bottom: 111px;
+      margin-bottom: 112px;
     }
   }
 
@@ -69,7 +69,7 @@
 
     @include for-large-up {
       flex-direction: row;
-      width: 1139px;
+      width: 1140px;
       height: 300px;
     }
   }
