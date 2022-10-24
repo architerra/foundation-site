@@ -7,7 +7,7 @@ $lg: 1400px;
 }
 
 @mixin for-large-doun {
-  @media (max-width: $lg - 1) {
+  @media (max-width: $lg - 1px) {
     @content;
   }
 }

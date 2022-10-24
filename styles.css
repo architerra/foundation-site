@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+}
+
 .get-button {
-  width: 160px;
+  width: 100%;
   height: 48px;
   background-color: rgb(48, 64, 196);
   border-radius: 2px;
@@ -9,11 +39,15 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .get-button {
+    width: 160px;
+  }
 }
 
 .learn-button {
-  width: 158px;
+  width: 100%;
   height: 48px;
   background-color: rgb(255, 255, 255);
   border-radius: 2px;
@@ -22,7 +56,11 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .learn-button {
+    width: 158px;
+  }
 }
 
 .header {
@@ -120,8 +158,127 @@
   height: 448px;
 }
 
+.audience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  height: 1808px;
+  padding: 50px 15px;
+  background-color: rgba(0, 161, 198, 0.07);
+}
+@media (min-width: 1400px) {
+  .audience {
+    height: 983px;
+  }
+}
+.audience__overtitle {
+  line-height: 34px;
+  margin-bottom: 17px;
+}
+.audience__title {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.audience__subtitle {
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}
+.audience__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 108px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (min-width: 1400px) {
+  .audience__buttons {
+    flex-direction: row;
+    width: 328px;
+    height: 48px;
+    margin-bottom: 111px;
+  }
+}
+.audience__cards {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 1245px;
+  justify-content: space-between;
+}
+@media (min-width: 1400px) {
+  .audience__cards {
+    flex-direction: row;
+    width: 1139px;
+    height: 300px;
+  }
+}
+.audience__user-card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 300px;
+  border-radius: 8px;
+  padding-top: 22px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 41, 45);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+.audience__user-card:hover {
+  background-color: rgb(48, 64, 196);
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 1400px) {
+  .audience__user-card {
+    width: 262px;
+  }
+}
+
+[alt=User] {
+  height: 195px;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+}
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+}
+
 .get-button {
-  width: 160px;
+  width: 100%;
   height: 48px;
   background-color: rgb(48, 64, 196);
   border-radius: 2px;
@@ -130,11 +287,15 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .get-button {
+    width: 160px;
+  }
 }
 
 .learn-button {
-  width: 158px;
+  width: 100%;
   height: 48px;
   background-color: rgb(255, 255, 255);
   border-radius: 2px;
@@ -143,7 +304,11 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .learn-button {
+    width: 158px;
+  }
 }
 
 .order {
@@ -171,9 +336,6 @@
   }
 }
 .order__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
   letter-spacing: -0.25px;
   color: rgb(43, 41, 45);
   margin-top: 40px;
@@ -272,9 +434,6 @@
 }
 
 .nav-links__title {
-  font-size: 22px;
-  line-height: 28px;
-  margin-top: 0;
   margin-bottom: 18px;
 }
 .nav-links__list {

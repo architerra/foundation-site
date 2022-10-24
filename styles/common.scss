@@ -1,5 +1,34 @@
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+
+  @include for-large-up {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+}
+
 .get-button {
-  width: 160px;
+  width: 100%;
   height: 48px;
   background-color: $button-blue-color;
   border-radius: 2px;
@@ -8,11 +37,14 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+
+  @include for-large-up {
+    width: 160px;
+  }
 }
 
 .learn-button {
-  width: 158px;
+  width: 100%;
   height: 48px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 2px;
@@ -21,5 +53,8 @@
   line-height: 13px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+
+  @include for-large-up {
+    width: 158px;
+  }
 }
