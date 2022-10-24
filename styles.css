@@ -97,14 +97,17 @@ h4 {
 
 .header {
   width: 1140px;
-  height: 62px;
+  height: 64px;
   display: flex;
   margin: auto;
   margin-top: 39px;
+  align-items: center;
 }
 
 .logo {
   display: flex;
+  margin-left: 12px;
+  justify-content: center;
 }
 .logo__icon {
   width: 60px;
@@ -129,6 +132,7 @@ h4 {
 }
 
 .navigation {
+  margin-right: 10px;
   margin-left: auto;
   margin-top: 7px;
 }
