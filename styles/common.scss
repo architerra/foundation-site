@@ -58,3 +58,33 @@ h4 {
     width: 158px;
   }
 }
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 300px;
+  border-radius: 8px;
+  padding-top: 22px;
+  align-items: center;
+  background-color: $prioriti-white-color;
+  color: $text-black-color;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+
+  &:hover {
+    background-color: $button-blue-color;
+    color: $prioriti-white-color;
+  }
+
+  @include for-large-up {
+    width: 262px;
+  }
+}
+
+[alt='User'] {
+  height: 195px;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
