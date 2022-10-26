@@ -96,12 +96,47 @@ h4 {
 }
 
 .header {
-  width: 1140px;
-  height: 64px;
   display: flex;
-  margin: auto;
-  margin-top: 39px;
+  margin: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
   align-items: center;
+}
+@media (min-width: 1400px) {
+  .header {
+    margin: auto;
+    margin-top: 39px;
+    width: 1140px;
+    height: 62px;
+    background-color: rgb(243, 198, 189);
+    align-items: center;
+  }
+}
+.header__btn {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .header__btn {
+    display: block;
+  }
+}
+.header__menu-btn {
+  display: flex;
+  margin-left: auto;
+  width: 58px;
+  height: 64px;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
+}
+@media (min-width: 1400px) {
+  .header__menu-btn {
+    display: none;
+  }
+}
+.header__hamburger {
+  margin: auto;
 }
 
 .logo {
@@ -110,9 +145,15 @@ h4 {
   justify-content: center;
 }
 .logo__icon {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   margin-right: 15px;
+}
+@media (min-width: 1400px) {
+  .logo__icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 .logo__text {
   display: flex;
@@ -125,16 +166,28 @@ h4 {
   line-height: 25px;
 }
 .logo__description {
-  font-size: 18px;
-  line-height: 25px;
-  color: rgb(43, 41, 45);
-  opacity: 0.6;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .logo__description {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(43, 41, 45);
+    opacity: 0.6;
+  }
 }
 
 .navigation {
-  margin-right: 10px;
-  margin-left: auto;
-  margin-top: 7px;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .navigation {
+    display: block;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 7px;
+  }
 }
 .navigation__item {
   font-size: 18px;
@@ -150,15 +203,17 @@ h4 {
   margin-left: 11px;
 }
 
-.headline {
-  position: relative;
-  display: flex;
-  width: 1248px;
-  height: 456px;
-  margin-bottom: 77px;
-  margin-top: auto;
-  margin-right: 25px;
-  margin-left: auto;
+@media (min-width: 1400px) {
+  .headline {
+    position: relative;
+    display: flex;
+    width: 1248px;
+    height: 456px;
+    margin-bottom: 77px;
+    margin-top: auto;
+    margin-right: 25px;
+    margin-left: auto;
+  }
 }
 
 .headline-content {
@@ -186,12 +241,14 @@ h4 {
   justify-content: space-between;
 }
 
-.headline-banner {
-  position: relative;
-  left: 579px;
-  bottom: 77px;
-  width: 796px;
-  height: 448px;
+@media (min-width: 1400px) {
+  .headline-banner {
+    position: relative;
+    left: 579px;
+    bottom: 77px;
+    width: 796px;
+    height: 448px;
+  }
 }
 
 .audience {
@@ -557,8 +614,13 @@ html {
 .top {
   display: flex;
   flex-direction: column;
-  height: 710px;
+  height: 890px;
   background-color: rgb(243, 198, 189);
+}
+@media (min-width: 1400px) {
+  .top {
+    height: 710px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

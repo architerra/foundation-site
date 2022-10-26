@@ -1,12 +1,47 @@
 @import 'variables.scss';
 
 .header {
-  width: 1140px;
-  height: 64px;
   display: flex;
-  margin: auto;
-  margin-top: 39px;
+  margin: 0;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
   align-items: center;
+
+  @include for-large-up {
+    margin: auto;
+    margin-top: 39px;
+    width: 1140px;
+    height: 62px;
+    background-color: $back-pink-color;
+    align-items: center;
+  }
+
+  &__btn {
+    display: none;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  &__menu-btn {
+    display: flex;
+    margin-left: auto;
+    width: 58px;
+    height: 64px;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #00000026;
+
+    @include for-large-up {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    margin: auto;
+  }
 }
 
 .logo {
@@ -15,9 +50,14 @@
   justify-content: center;
 
   &__icon {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     margin-right: 15px;
+
+    @include for-large-up {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__text {
@@ -33,17 +73,27 @@
   }
 
   &__description {
-    font-size: 18px;
-    line-height: 25px;
-    color: $text-black-color;
-    opacity: 0.6;
+    display: none;
+
+    @include for-large-up {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-black-color;
+      opacity: 0.6;
+    }
   }
 }
 
 .navigation {
-  margin-right: 10px;
-  margin-left: auto;
-  margin-top: 7px;
+  display: none;
+
+  @include for-large-up {
+    display: block;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 7px;
+  }
 
   &__item {
     font-size: 18px;

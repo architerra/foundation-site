@@ -32,6 +32,10 @@ html {
 .top {
   display: flex;
   flex-direction: column;
-  height: 710px;
+  height: 890px;
   background-color: $back-pink-color;
+
+  @include for-large-up {
+    height: 710px;
+  }
 }

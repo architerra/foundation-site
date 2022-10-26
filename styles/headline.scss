@@ -1,14 +1,16 @@
 @import 'variables.scss';
 
 .headline {
-  position: relative;
-  display: flex;
-  width: 1248px;
-  height: 456px;
-  margin-bottom: 77px;
-  margin-top: auto;
-  margin-right: 25px;
-  margin-left: auto;
+  @include for-large-up {
+    position: relative;
+    display: flex;
+    width: 1248px;
+    height: 456px;
+    margin-bottom: 77px;
+    margin-top: auto;
+    margin-right: 25px;
+    margin-left: auto;
+  }
 }
 
 .headline-content {
@@ -40,9 +42,11 @@
 }
 
 .headline-banner {
-  position: relative;
-  left: 579px;
-  bottom: 77px;
-  width: 796px;
-  height: 448px;
+  @include for-large-up {
+    position: relative;
+    left: 579px;
+    bottom: 77px;
+    width: 796px;
+    height: 448px;
+  }
 }
