@@ -3,6 +3,7 @@
 .headline {
   display: flex;
   flex-direction: column;
+  width: 320px;
 
   @include for-large-up {
     position: relative;
@@ -68,6 +69,8 @@
 }
 
 .headline-banner {
+  width: 320px;
+
   @include for-large-up {
     position: relative;
     left: 579px;

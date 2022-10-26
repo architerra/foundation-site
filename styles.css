@@ -206,6 +206,7 @@ h4 {
 .headline {
   display: flex;
   flex-direction: column;
+  width: 320px;
 }
 @media (min-width: 1400px) {
   .headline {
@@ -266,6 +267,9 @@ h4 {
   }
 }
 
+.headline-banner {
+  width: 320px;
+}
 @media (min-width: 1400px) {
   .headline-banner {
     position: relative;
@@ -530,45 +534,139 @@ h4 {
 }
 
 .footer {
-  height: 389px;
+  width: 320px;
+  height: 868px;
+  color: rgb(43, 41, 45);
+}
+@media (min-width: 1400px) {
+  .footer {
+    width: 1400px;
+    height: 389px;
+  }
 }
 
 .footer-about {
-  height: 338px;
-  display: flex;
-  border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+  height: 776px;
+}
+@media (min-width: 1400px) {
+  .footer-about {
+    height: 338px;
+    display: flex;
+    border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+  }
 }
 
 .footer-description {
-  margin-left: 130px;
-  margin-top: 43px;
-  margin-right: auto;
-  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.1);
+}
+@media (min-width: 1400px) {
+  .footer-description {
+    margin-left: 130px;
+    margin-top: 43px;
+    margin-right: auto;
+    max-width: 360px;
+    align-items: flex-start;
+    border: none;
+  }
 }
 .footer-description__text {
-  color: rgb(43, 41, 45);
-  font-size: 18px;
-  opacity: 0.6;
-  line-height: 26px;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .footer-description__text {
+    display: block;
+    font-size: 18px;
+    opacity: 0.6;
+    line-height: 26px;
+  }
 }
 .footer-description__ref {
-  margin-right: 10px;
-  margin-top: 25px;
+  display: flex;
+  width: 262px;
+  margin-top: 31px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+@media (min-width: 1400px) {
+  .footer-description__ref {
+    margin-top: 25px;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .footer-logo {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+.footer-logo__icon {
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 1400px) {
+  .footer-logo__icon {
+    margin-right: 15px;
+  }
+}
+.footer-logo__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .footer-logo__text {
+    margin-top: 4px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.footer-logo__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.footer-logo__description {
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 0.6;
 }
 
 .additional-nav {
   display: flex;
-  width: 559px;
-  height: 231px;
-  margin-right: 226px;
-  margin-top: 60px;
-  color: rgb(43, 41, 45);
+  flex-direction: column;
+  margin: 30px 15px 30px 15px;
+}
+@media (min-width: 1400px) {
+  .additional-nav {
+    flex-direction: row;
+    width: 559px;
+    height: 231px;
+    margin: 0;
+    margin-right: 226px;
+    margin-top: 60px;
+  }
 }
 .additional-nav__column {
   width: 265px;
 }
 .additional-nav__column:first-child {
-  margin-right: 29px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1400px) {
+  .additional-nav__column:first-child {
+    margin: 0;
+    margin-right: 29px;
+  }
 }
 
 .nav-links__title {
@@ -586,32 +684,44 @@ h4 {
 }
 
 .footer-links {
-  display: flex;
-  height: 50px;
-  align-items: center;
+  padding-left: 15px;
+}
+@media (min-width: 1400px) {
+  .footer-links {
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
 }
 
 .footer-nav {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 30px;
+  justify-content: space-between;
   width: 180px;
-  margin-left: 130px;
-  line-height: 22px;
-}
-.footer-nav__item {
   font-size: 14px;
   text-decoration: none;
-  color: rgb(43, 41, 45);
   opacity: 0.6;
+  line-height: 22px;
+}
+@media (min-width: 1400px) {
+  .footer-nav {
+    margin-bottom: 0px;
+    margin-left: 130px;
+  }
 }
 
 .social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 97px;
   height: 16px;
-  margin-left: auto;
-  margin-right: 130px;
+}
+@media (min-width: 1400px) {
+  .social-links {
+    margin-left: auto;
+    margin-right: 130px;
+  }
 }
 
 * {
